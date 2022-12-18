@@ -5,9 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piedra - papel - tijera</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+
+    <style>
+    h1 {
+        text-align: center;
+        margin: 150px auto 75px auto;
+    }
+    #botones {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        gap: 1.3em;
+        justify-content: space-between;
+ 
+    }
+    button {
+        width: 150px;
+        height: 150px;
+        background-color: coral;
+        border: 1px solid yellow;
+        border-radius: 20px;
+        color:beige;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    </style>
 </head>
 <body>
-    
+    <h1>¡Juega conmigo!</h1>
+
+
+ 
+        <div id="botones">
+            <button value="piedra">Piedra</button>
+            <button value="papel">Papel</button>
+            <button value="tijera">Tijera</button>
+        </div>
+
+
+
+<!--     <script>
+        // buttons is a node list. It looks and acts much like an array.
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', (e) => {
+    alert(e.target.value);
+  });
+});
+    </script> -->
 </body>
 </html>
