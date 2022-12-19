@@ -25,11 +25,53 @@
         width: 150px;
         height: 150px;
         background-color: coral;
-        border: 1px solid yellow;
+        border: 2px solid yellow;
         border-radius: 20px;
-        color:beige;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 18px;
+        font-size: 20px;       
+    }
+
+    #mensaje1, #mensaje2 {
+        max-width: 800px;
+        text-align: center;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #mensaje1 {
+        transition: 0.5s;
+        margin-top: 15px;
+    }
+    #mensaje2 {
+        transition: 1.5s;
+    }
+
+  .crecer {
+        font-size: 24px !important;
+        padding: 25px !important;
+        font-weight: 700;
+    }
+
+    .gano {
+
+        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+        font-size: 30px;
+    }
+
+    
+    .ganas {
+        text-shadow: #FC0 1px 0 10px;
+        font-size: 30px;
+    }
+
+    .marcador {
+        max-width: 800px;
+            padding: 100px;
+            text-align: center;
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            color: coral;
+
     }
 
     </style>
@@ -45,6 +87,8 @@
             <button value="tijera">Tijera</button>
         </div>
 
+            <div id="mensaje1"></div>
+            <div id="mensaje2"></div>
 
 
 <!--     <script>
